@@ -7,12 +7,14 @@ public class Grid {
 
     public static final int PADDING = 10;
     public static final int CELL_SIZE = 30;
-    public int cols;
-    public int rows;
+    public final int cols;
+    public final int rows;
+    private Cell[][] cells;
 
     public Grid(int cols, int rows) {
         this.cols = cols;
         this.rows = rows;
+        this.cells = new Cell[cols][rows];
         draw();
     }
 
@@ -25,7 +27,7 @@ public class Grid {
 
         for (int i = 0; i < cols; i++) {
             for (int j = 0; j < rows; j++) {
-                Cell cell = new Cell(i, j);
+                cells[i][j] = new Cell(i, j);
             }
         }
     }
@@ -41,6 +43,4 @@ public class Grid {
     public static int convertToPix(int numb){
         return (numb * CELL_SIZE) + PADDING;
     }
-
-
 }

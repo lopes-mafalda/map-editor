@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1cc90f79-663d-4a34-9a26-220f17bf42e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +110,7 @@
       <workItem from="1717764350345" duration="2228000" />
       <workItem from="1717776864838" duration="238000" />
       <workItem from="1717777151307" duration="7000" />
-      <workItem from="1717856329398" duration="2365000" />
+      <workItem from="1717856329398" duration="3759000" />
     </task>
     <servers />
   </component>

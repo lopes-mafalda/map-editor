@@ -1,15 +1,35 @@
 package io.codeforall.flowribellas.player;
 
 import io.codeforall.flowribellas.grid.Cell;
-import io.codeforall.flowribellas.grid.Grid;
 import io.codeforall.flowribellas.grid.Position;
 
-public class Player extends Cell {
+public class Player{
 
-    private Position position;
+    private Cell cell;
+    private KeyboardController keyboardController;
 
     public Player() {
-        super(Grid.PADDING, Grid.PADDING);
-        this.position = new Position(0, 0);
+        this.cell = new Cell(0, 0);
+        cell.paint();
+    }
+
+    public Position getPosition(){
+        return cell.getPosition();
+    }
+
+    public void moveUp() {
+        cell.getPosition().moveUp();
+    }
+
+    public void moveDown() {
+        cell.getPosition().moveDown();
+    }
+
+    public void moveLeft() {
+        cell.getPosition().moveLeft();
+    }
+
+    public void moveRight() {
+        cell.getPosition().moveRight();
     }
 }
