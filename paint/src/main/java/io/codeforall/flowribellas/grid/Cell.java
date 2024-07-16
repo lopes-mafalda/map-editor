@@ -1,6 +1,7 @@
 package io.codeforall.flowribellas.grid;
 
 
+import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Cell {
@@ -22,4 +23,7 @@ public class Cell {
     }
 
 
+    public void setColor(Color color) {
+        this.position.getRectangle().setColor(color);
+    }
 }

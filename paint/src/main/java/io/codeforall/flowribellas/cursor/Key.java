@@ -1,10 +1,10 @@
-package io.codeforall.flowribellas.player;
+package io.codeforall.flowribellas.cursor;
 
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 
-public enum Keys {
+public enum Key {
 
     PRESS_SPACE(KeyboardEvent.KEY_SPACE, KeyboardEventType.KEY_PRESSED),
     RELEASE_SPACE(KeyboardEvent.KEY_SPACE, KeyboardEventType.KEY_RELEASED),
@@ -31,16 +31,22 @@ public enum Keys {
     private int key;
     private KeyboardEventType type;
 
-    Keys(int key, KeyboardEventType type) {
+    Key(int key, KeyboardEventType type) {
         this.key = key;
         this.type = type;
     }
 
-    public void addKeyboardEvent(Keyboard keyboard){
+    private void addKeyboardEvent(Keyboard keyboard) {
         KeyboardEvent keyboardEvent = new KeyboardEvent();
         keyboardEvent.setKey(key);
         keyboardEvent.setKeyboardEventType(type);
 
         keyboard.addEventListener(keyboardEvent);
+    }
+
+    public static void addAllKeyboardEvents(Keyboard keyboard) {
+        for (Key key : Key.values()) {
+            key.addKeyboardEvent(keyboard);
+        }
     }
 }

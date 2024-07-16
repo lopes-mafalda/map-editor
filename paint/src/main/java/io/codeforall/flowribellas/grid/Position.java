@@ -44,4 +44,12 @@ public class Position {
     public void paint(){
         this.rectangle.fill();
     }
+
+    public int getCol() {
+        return col;
+    }
+
+    public int getRow() {
+        return row;
+    }
 }

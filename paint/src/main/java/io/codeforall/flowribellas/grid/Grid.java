@@ -1,7 +1,9 @@
 package io.codeforall.flowribellas.grid;
 
 
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import io.codeforall.flowribellas.KeyboardController;
+import io.codeforall.flowribellas.cursor.Cursor;
+import io.codeforall.flowribellas.cursor.Direction;
 
 public class Grid {
 
@@ -10,37 +12,59 @@ public class Grid {
     public final int cols;
     public final int rows;
     private Cell[][] cells;
+    private Cursor cursor;
+    private KeyboardController keyboardController;
 
     public Grid(int cols, int rows) {
         this.cols = cols;
         this.rows = rows;
+
+        this.cells = draw();
+
+        this.cursor = new Cursor();
+    }
+
+    private Cell[][] draw(){
+
         this.cells = new Cell[cols][rows];
-        draw();
-    }
-
-    private void draw(){
-        Rectangle field = new Rectangle(PADDING, PADDING, getWidth(), getHeight());
-        field.draw();
-    }
-
-    public void start(){
 
         for (int i = 0; i < cols; i++) {
             for (int j = 0; j < rows; j++) {
                 cells[i][j] = new Cell(i, j);
             }
         }
+
+        return cells;
     }
 
-    public int getWidth(){
-        return convertToPix(cols) - PADDING;
-    }
+    public boolean isEdge(Direction direction, Cursor cursor){
+        switch (direction){
+            case UP:
+                return cursor.getPosition().getRow() == 0;
 
-    public int getHeight(){
-        return convertToPix(rows) - PADDING;
+            case DOWN:
+                return cursor.getPosition().getRow() == rows;
+
+            case LEFT:
+                return cursor.getPosition().getCol() == 0;
+            case RIGHT:
+                return cursor.getPosition().getCol() == cols;
+        }
     }
 
     public static int convertToPix(int numb){
         return (numb * CELL_SIZE) + PADDING;
     }
+
+
+
+/*
+    private int getWidth(){
+        return convertToPix(cols) - PADDING;
+    }
+
+    private int getHeight(){
+        return convertToPix(rows) - PADDING;
+    }
+*/
 }
