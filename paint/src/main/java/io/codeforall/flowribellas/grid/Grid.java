@@ -49,6 +49,8 @@ public class Grid {
                 return cursor.getPosition().getCol() == 0;
             case RIGHT:
                 return cursor.getPosition().getCol() == cols;
+            default:
+                return false;
         }
     }
 

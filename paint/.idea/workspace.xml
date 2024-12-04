@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cc90f79-663d-4a34-9a26-220f17bf42e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/KeyboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/grid/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/player/KeyboardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/player/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/cursor/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codeforall/flowribellas/cursor/Cursor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mafas/Documents/repos-academia/bootcamp/exercises/season-2/ep-01-network/dns-resolver",
+    "last_opened_file_path": "/home/mafas/Documents/my-repos/map-editor/paint",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,8 +89,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -118,6 +109,7 @@
       <workItem from="1717856329398" duration="11491000" />
       <workItem from="1718260564280" duration="50000" />
       <workItem from="1718260699573" duration="20000" />
+      <workItem from="1727791041532" duration="227000" />
     </task>
     <servers />
   </component>
